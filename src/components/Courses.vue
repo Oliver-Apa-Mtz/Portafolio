@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="projects__random__division">
-                <div class="projects__cards__item" v-for="(item, i) in courses" :key="'othres'+i">
+                <div class="projects__cards__item" v-for="(item, i) in more" :key="'othres'+i">
                     <Card :data="item"></Card>
                 </div>
             </div>
@@ -45,9 +45,21 @@ export default {
             ],
             desing: [
                 {
+                    title: 'Curso de ECMAScript 6+',
+                    year: '2022',
+                    image: 'ingles.png'
+                },
+                {
                     title: 'Curso de Figma para Frontends',
                     year: '2021',
                     image: 'figma.webp'
+                }
+            ],
+            more: [
+                {
+                    title: 'Curso de Inglés para Principiantes',
+                    year: '2022',
+                    image: 'ingles.png'
                 }
             ]
         }
@@ -58,16 +70,16 @@ export default {
 <style>
 .projects__random{
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
 }
 .projects__random__division{
     width: 33%;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 .projects__random__division .projects__cards__item{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .projects__random__division .projects__cards__item .card{
     height: auto;

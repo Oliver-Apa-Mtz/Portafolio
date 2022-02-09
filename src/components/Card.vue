@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card__visible">
-            <div class="card__image">
+            <div class="card__image" :class="{'card__image--small' : type == 'project'}">
                 <img v-if="data.image" :src="require(`../assets/${data.image}`)" alt="">
             </div>
         </div>
@@ -15,7 +15,7 @@
 <script>
 export default {
     name: 'Card',
-    props: ['data']
+    props: ['data', 'type']
 }
 </script>
 
@@ -55,9 +55,22 @@ export default {
 .card:hover > .card__hidden{
     bottom: 0;
 }
+.card__image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__image:hover > img{
+    transform: scale(1);
+}
 .card__image img{
-    display: block;
     width: 70%;
-    margin: 0 auto;
+    transition: all .2s linear;
+    transform: scale(.7);
+}
+.card__image--small img{
+    width: 50%;
 }
 </style>

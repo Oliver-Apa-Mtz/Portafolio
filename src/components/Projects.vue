@@ -6,7 +6,7 @@
         </div>
         <div class="projects__cards">
             <div class="projects__cards__item" v-for="(item, i) in experience" :key="'card'+i">
-                <Card :data="item"></Card>
+                <Card :data="item" :type="'project'"></Card>
             </div>
         </div>
     </div>
@@ -24,17 +24,17 @@ export default {
                 {
                     title: 'Intagono',
                     year: '2017 - 2019',
-                    image: ''
+                    image: 'intagono.png'
                 },
                 {
                     title: 'Orderly',
                     year: '2019 - 2021',
-                    image: ''
+                    image: 'orderly.png'
                 },
                 {
                     title: 'Dacodes',
                     year: '2021 - Actualmente',
-                    image: ''
+                    image: 'dacodes.webp'
                 }
             ]
         }

@@ -6,7 +6,7 @@
         <div class="about__item">
             <div class="about__item--info">
                 <h3 class="about__item--title">About</h3>
-                <p class="about__item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ex harum est eaque, pariatur praesentium enim ut corrupti quasi ipsum tempora officiis quod, cupiditate dicta eum, recusandae fugit quos? Numquam.</p>
+                <p class="about__item--text">Apasionado en el desarrollo web, con 4 años de experiencia aprendiendo nuevas tecnologias y nuevas herramientas, me motiva cada conocimiento obtenido, me fascina todo el proceso que conlleva un proyecto web, desde que comienza con un diseño hasta verlo reflejado en un computador o un celular. Interesado en aprender mas cosas tales como diseño en interfaces ( UI ) y en la generación de buena experiencia al usuario ( UX ), con la finalidad de ser un desarrollador FullStack.</p>
                 <div class="about__item--btn">Experiencia</div>
             </div>
         </div>
@@ -47,8 +47,8 @@ export default {
     padding: 0 20px;
 }
 .about__item--text{
-    font-size: 2.4rem;
-    line-height: 3.4rem;
+    font-size: 2rem;
+    line-height: 3rem;
     margin: 30px 0;
 }
 .about__item--btn{
