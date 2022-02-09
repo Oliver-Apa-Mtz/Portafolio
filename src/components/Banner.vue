@@ -19,16 +19,17 @@ export default {
 <style>
 .banner{
     padding: 0 50px;
+    margin-bottom: 50px;
 }
 .banner__contain{
     width: 100%;
     height: 600px;
-    /*background-image: url('../assets/banner.jpg');*/
+    background-image: url('../assets/banner2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     padding: 0 50px;
-    background-color: #EEEEEE;
+    filter: grayscale(.6);
 }
 .banner__contain__text{
     width: 100%;

@@ -6,7 +6,7 @@
         </div>
         <div class="projects__cards">
             <div class="projects__cards__item" v-for="(item, i) in experience" :key="'card'+i">
-                <Card :title="item.title"></Card>
+                <Card :data="item"></Card>
             </div>
         </div>
     </div>
@@ -22,13 +22,19 @@ export default {
         return {
             experience: [
                 {
-                    title: 'Dacodes'
+                    title: 'Intagono',
+                    year: '2017 - 2019',
+                    image: ''
                 },
                 {
-                    title: 'Orderly'
+                    title: 'Orderly',
+                    year: '2019 - 2021',
+                    image: ''
                 },
                 {
-                    title: 'Intagono'
+                    title: 'Dacodes',
+                    year: '2021 - Actualmente',
+                    image: ''
                 }
             ]
         }
@@ -61,6 +67,5 @@ h3{
 }
 .projects__cards__item{
     width: 30%;
-
 }
 </style>

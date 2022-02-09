@@ -2,18 +2,26 @@
 	<div id="app">
 		<Header></Header>
 		<Banner></Banner>
+		<About></About>
 		<Projects></Projects>
+		<Courses></Courses>
+		<Contact></Contact>
+		<Footer></Footer>
 	</div>
 </template>
 
 <script>
 import Header from './components/layout/Header'
 import Banner from './components/Banner'
+import About from './components/About'
 import Projects from './components/Projects.vue'
+import Courses from './components/Courses.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/layout/Footer.vue'
 
 export default {
 	name: 'App',
-	components: { Header, Banner, Projects }
+	components: { Header, Banner, Projects, About, Contact, Footer, Courses }
 }
 </script>
 
