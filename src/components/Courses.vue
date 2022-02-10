@@ -47,7 +47,7 @@ export default {
                 {
                     title: 'Curso de ECMAScript 6+',
                     year: '2022',
-                    image: 'ingles.png'
+                    image: 'js.png'
                 },
                 {
                     title: 'Curso de Figma para Frontends',

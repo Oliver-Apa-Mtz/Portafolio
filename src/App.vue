@@ -5,6 +5,7 @@
 		<About></About>
 		<Projects></Projects>
 		<Courses></Courses>
+		<Freelances></Freelances>
 		<Contact></Contact>
 		<Footer></Footer>
 	</div>
@@ -16,12 +17,13 @@ import Banner from './components/Banner'
 import About from './components/About'
 import Projects from './components/Projects.vue'
 import Courses from './components/Courses.vue'
+import Freelances from './components/Freelances.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/layout/Footer.vue'
 
 export default {
 	name: 'App',
-	components: { Header, Banner, Projects, About, Contact, Footer, Courses }
+	components: { Header, Banner, Projects, About, Contact, Footer, Courses, Freelances }
 }
 </script>
 
