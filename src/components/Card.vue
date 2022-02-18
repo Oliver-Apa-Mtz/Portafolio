@@ -31,17 +31,16 @@ export default {
 .card__visible{
     width: 100%;
     height: 100%;
-    
 }
 .card__hidden{
     position: absolute;
     width: 100%;
     height: 60px;
     left: 0;
-    bottom: -80px;
-    background: rgba(0,0,0,.8);
+    bottom: -60px;
+    background: black;
     padding: 5px 20px 0px;
-    transition: all .3s;
+    transition: all .4s ease-in-out 0s;
 }
 .card__hidden__title, .card__hidden__year{
     color: white;
@@ -62,7 +61,7 @@ export default {
     align-items: center;
     justify-content: center;
 }
-.card__image:hover > img{
+.card:hover .card__image > img{
     transform: scale(1);
 }
 .card__image img{
@@ -72,5 +71,17 @@ export default {
 }
 .card__image--small img{
     width: 50%;
+}
+@media(max-width: 639px){
+    .card{
+        height: 300px;
+    }
+    .card__hidden{
+        bottom: 0;
+    }
+    .card__hidden__title{
+        font-size: 1.6rem;
+        padding-top: 5px;
+    }
 }
 </style>

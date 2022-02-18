@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="projects__title">
             <h3>Proyectos Freelances</h3>
             <p>Proyectos trabajados en conjunto de forma independiente</p>
@@ -23,10 +23,17 @@ export default {
                 {
                     title: 'Página Web - Referee Pro',
                     year: '2018 - 2019',
+                    image: 'referee.svg'
                 },
                 {
                     title: 'Sistema Web - Asefis Consultores',
                     year: '2019 - 2020',
+                    image: 'asefis.png'
+                },
+                {
+                    title: 'Proyecto Personal (App React native)',
+                    year: 'Proximamente',
+                    image: 'react.svg'
                 }
             ]
         }
@@ -35,10 +42,5 @@ export default {
 </script>
 
 <style>
-.projects__cards--custom{
-    justify-content: flex-start !important;
-}
-.projects__cards--custom .projects__cards__item{
-    margin-right: 20px;
-}
+
 </style>

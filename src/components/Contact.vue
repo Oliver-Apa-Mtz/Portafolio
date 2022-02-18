@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact__header">
             <p class="contact__header--sub">¡Comenzemos un proyecto!</p>
             <h5 class="contact__header--title">Contactame</h5>
@@ -56,5 +56,51 @@ export default {
 .contact__body__item--text{
     font-size: 1.8rem;
     font-weight: 300;
+}
+
+@media(max-width: 1200px){
+    .contact{
+        padding: 20px 40px;
+    }
+    .contact__body{
+        margin-top: 50px;
+    }
+    .contact__body__item{
+        width: 33%;
+    }
+}
+@media(max-width: 1023px){
+    .contact{
+        padding: 20px;
+    }
+    .contact__body{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .contact__body__item{
+        width: 50%;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+    .contact__body__item--title{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 639px){
+    .contact{
+        text-align: center;
+    }
+    .contact__body__item{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .contact__header--sub{
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .contact__header--title{
+        font-size: 4rem;
+    }
 }
 </style>

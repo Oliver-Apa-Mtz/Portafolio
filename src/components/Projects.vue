@@ -1,12 +1,14 @@
 <template>
-    <div class="projects">
+    <div class="projects" id="experiences">
         <div class="projects__title">
             <h3>Experiencia</h3>
             <p>Empresas para las cuales eh trabajado</p>
         </div>
         <div class="projects__cards">
             <div class="projects__cards__item" v-for="(item, i) in experience" :key="'card'+i">
-                <Card :data="item" :type="'project'"></Card>
+                <a :href="item.url" target="_blank">
+                    <Card :data="item" :type="'project'"></Card>
+                </a>
             </div>
         </div>
     </div>
@@ -24,17 +26,20 @@ export default {
                 {
                     title: 'Intagono',
                     year: '2017 - 2019',
-                    image: 'intagono.png'
+                    image: 'intagono.png',
+                    url: 'https://intagono.com/'
                 },
                 {
                     title: 'Orderly',
                     year: '2019 - 2021',
-                    image: 'orderly.png'
+                    image: 'orderly.png',
+                    url: 'https://somosorderly.com/'
                 },
                 {
                     title: 'Dacodes',
                     year: '2021 - Actualmente',
-                    image: 'dacodes.webp'
+                    image: 'dacodes.webp',
+                    url: 'https://dacodes.com/'
                 }
             ]
         }
@@ -66,6 +71,23 @@ h3{
     justify-content: space-between;
 }
 .projects__cards__item{
-    width: 30%;
+    width: 33%;
+    position: relative;
+    transition: all .3s;
+}
+@media(max-width: 1023px){
+    .projects__cards{
+        flex-wrap: wrap;
+    }
+    .projects__cards__item{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 639px){
+    .projects__cards__item{
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
 </style>

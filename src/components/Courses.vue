@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <div class="projects" id="courses">
         <div class="projects__title">
             <h3>Certificaciones</h3>
             <p>Certificaciones obtenidas mediante distintas plataformas en lo largo de mi trayectoria</p>
@@ -60,6 +60,11 @@ export default {
                     title: 'Curso de Inglés para Principiantes',
                     year: '2022',
                     image: 'ingles.png'
+                },
+                {
+                    title: 'Taller de Inglés para Principiantes',
+                    year: '2022',
+                    image: 'ingles2.png'
                 }
             ]
         }
@@ -84,5 +89,19 @@ export default {
 .projects__random__division .projects__cards__item .card{
     height: auto;
     padding: 20px 0;
+}
+@media(max-width: 1023px){
+    .projects__random{
+        flex-wrap: wrap;
+    }
+    .projects__random__division{
+        width: 100%;
+        padding: 0 150px;
+    }
+}
+@media(max-width: 639px){
+    .projects__random__division{
+        padding: 0 20px;
+    }
 }
 </style>

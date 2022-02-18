@@ -1,13 +1,13 @@
 <template>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__item">
             <div class="about__item--image"></div>
         </div>
         <div class="about__item">
             <div class="about__item--info">
-                <h3 class="about__item--title">About</h3>
-                <p class="about__item--text">Apasionado en el desarrollo web, con 4 años de experiencia aprendiendo nuevas tecnologias y nuevas herramientas, me motiva cada conocimiento obtenido, me fascina todo el proceso que conlleva un proyecto web, desde que comienza con un diseño hasta verlo reflejado en un computador o un celular. Interesado en aprender mas cosas tales como diseño en interfaces ( UI ) y en la generación de buena experiencia al usuario ( UX ), con la finalidad de ser un desarrollador FullStack.</p>
-                <div class="about__item--btn">Experiencia</div>
+                <h3 class="about__item--title">Sobre mí</h3>
+                <p class="about__item--text">Apasionado en el desarrollo web, con más de 4 años de experiencia aprendiendo nuevas tecnologias y nuevas herramientas, me motiva cada conocimiento obtenido, me fascina todo el proceso que conlleva un proyecto web, desde que comienza con un diseño hasta verlo reflejado en un computador o un celular. Interesado en aprender mas cosas tales como diseño en interfaces ( UI ) y en la generación de buena experiencia al usuario ( UX ), con la finalidad de ser un desarrollador FullStack.</p>
+                <a href="#experiences" class="about__item--btn">Experiencia</a>
             </div>
         </div>
     </div>
@@ -72,5 +72,27 @@ export default {
 }
 .about__item--btn:hover::before{
     width: 100%;
+}
+
+@media(max-width: 1023px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .about__item{
+        width: 100%;
+        height: auto;
+    }
+    .about__item--image{
+        width: 60%;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 639px){
+    .about__item--image{
+        width: 60%;
+        height: 300px;
+        margin-bottom: 40px;
+    }
 }
 </style>

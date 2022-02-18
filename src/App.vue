@@ -34,10 +34,14 @@ export default {
 	box-sizing: border-box;
 	font-size: 10px;
 }
-#app {
+#app, * {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: #2c3e50;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
 }
 </style>
